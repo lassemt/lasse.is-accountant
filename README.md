@@ -1,2 +1,1 @@
-# LasseLasse_core
-# lasse.is-accountant
+# lasse.is/accountant
