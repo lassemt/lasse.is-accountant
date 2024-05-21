@@ -1,10 +1,14 @@
 <script>
-  export let label;
-  let inputElement;
+  let {
+    children,
+    inputElement = $bindable()
+  } = $props();
 </script>
 
+
+
 <button on:click={inputElement.click}>
-  <span>{label}</span>
+  {@render children()}
   <input bind:this={inputElement} on:change on:click|stopPropagation type="file" accept="image/*" multiple />
 </button>
 

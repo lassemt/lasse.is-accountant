@@ -90,7 +90,7 @@
 	<div class="App__toolbar">
 		<h1>{title}.csv</h1>
 		<nav >
-      <FileInputButton on:change={onFileInput} label="Open image" />
+      <FileInputButton on:change={onFileInput}>Open image</FileInputButton>
       <button on:click={saveData}>Save</button>
       <button on:click={copyData}>Copy</button>
       <input type="number" on:change={getImageData} bind:value={nColumns} min="8" max="1024"/>
